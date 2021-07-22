@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | IMMD_2D</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1366px; height: 768px; background: #231F20"></canvas>
+    <script src="Build/undertrialrunonlyHard.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/undertrialrunonlyHard.data",
+        frameworkUrl: "Build/undertrialrunonlyHard.framework.js",
+        codeUrl: "Build/undertrialrunonlyHard.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "IMMD_2D",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
